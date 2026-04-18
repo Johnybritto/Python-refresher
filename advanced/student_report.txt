@@ -1,0 +1,5 @@
+Name: john
+Score: 25
+
+Name: mary
+Score: 30
