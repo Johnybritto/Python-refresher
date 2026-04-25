@@ -196,3 +196,88 @@ Keep this short and practical.
 - logging and testing basics
 - token and rate-limit awareness
 - real provider integration later
+
+## Next Roadmap After This Plan
+
+Finish this prep plan first.
+
+After that, move into a more practical GenAI builder-to-platform roadmap.
+
+This next roadmap should still be learned hands-on:
+- tiny lessons
+- one focused coding exercise
+- short review
+- mini projects after every few topics
+
+## Stage 1: GenAI Builder
+This stage turns API knowledge into real GenAI apps.
+
+### Main Topics
+- prompt structure and message design
+- token usage, pricing, and context windows
+- retries, backoff, and safer request patterns
+- structured outputs
+- tool calling / function calling basics
+- streaming responses
+- saving chats and outputs
+- small FastAPI wrappers around model calls
+
+### Mini Project Ideas
+- terminal chatbot
+- prompt tester
+- text summarizer API
+- JSON output generator
+
+## Stage 2: RAG and Evaluation
+This stage teaches you how to build retrieval-based AI apps properly.
+
+### Main Topics
+- embeddings
+- chunking
+- vector database basics
+- similarity search
+- RAG pipeline flow
+- citation/source-return patterns
+- eval datasets for prompts and RAG
+- basic quality checks for retrieval and answers
+
+### Mini Project Ideas
+- PDF or notes Q&A bot
+- personal knowledge base assistant
+- FAQ bot with source chunks
+
+## Stage 3: Production GenAI and AI Platform Basics
+This stage moves toward what stronger DevOps / platform people learn in AI.
+
+### Main Topics
+- observability for LLM apps
+- token, latency, and failure monitoring
+- OpenTelemetry / OpenInference awareness
+- guardrails and safety checks
+- deployment basics for GenAI apps
+- Docker for API apps
+- serving patterns for inference systems
+- intro to KServe / vLLM / model serving ideas
+- GPU and scaling awareness
+- cost control and rate-limit strategy
+
+### Mini Project Ideas
+- deploy a small FastAPI GenAI app
+- add tracing and logging to an LLM app
+- compare response quality vs token cost
+
+## Recommended Order After This Plan
+1. Build 1 or 2 small real GenAI apps
+2. Learn tokens, costs, and structured outputs
+3. Learn tool calling and streaming
+4. Learn embeddings and RAG basics
+5. Learn evals and monitoring
+6. Learn deployment and platform basics
+7. Later move deeper into serving, GPUs, and AI infra
+
+## Important Note
+Your current prep plan is not separate from the advanced roadmap.
+
+It is the foundation for it.
+
+The next roadmap should begin only after this one feels comfortable in practice.
