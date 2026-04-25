@@ -6,3 +6,10 @@
 # - prints response.status_code
 # - prints type(response.json())
 
+import requests
+
+response = requests.get("https://api.github.com")
+
+print(response.status_code)
+
+print(type(response.json()))

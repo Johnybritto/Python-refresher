@@ -1,0 +1,2 @@
+https://api.github.com/user
+https://github.com/settings/connections/applications{/client_id}
