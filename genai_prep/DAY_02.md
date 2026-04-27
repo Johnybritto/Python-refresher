@@ -4,6 +4,9 @@
 - A function usually returns one final value with `return`.
 - Lists store all their values in memory at once.
 - Loops help process values one by one.
+- A generator gives values one at a time with `yield`.
+- Use a list when you need to store and reuse items.
+- Use a generator when you want to process items one by one.
 
 ## Today's Goal
 - Understand what `yield` does
@@ -68,6 +71,46 @@ Generators are useful when:
 ### 5. Simple Mental Model
 - list: creates all values now
 - generator: creates values when needed
+
+## Revision Notes
+
+### List vs Generator
+- A list stores all values immediately.
+- A generator produces values only when the loop asks for them.
+- A list is better when you need direct indexing like `my_list[4]`.
+- A generator is better when the data is large and you do not want to build the whole list first.
+
+### Real Use Case
+Generators are useful for:
+- reading a large file line by line
+- processing a very large list of numbers
+- streaming output piece by piece
+
+### Example Code
+
+```python
+def get_even_numbers(numbers):
+    for num in numbers:
+        if num % 2 == 0:
+            yield num
+
+data = [3, 8, 5, 10, 7, 12]
+
+for value in get_even_numbers(data):
+    print(value)
+```
+
+This prints:
+
+```python
+8
+10
+12
+```
+
+Why this example matters:
+- the generator checks one number at a time
+- it does not need to build a new full list first
 
 ## Hint
 Today's goal is not advanced generator logic.
