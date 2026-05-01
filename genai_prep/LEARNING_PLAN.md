@@ -5,4 +5,4 @@ Use the full roadmap in [../GENAI_PREP_PLAN.md](../GENAI_PREP_PLAN.md).
 This folder contains the daily lessons and practice files for the GenAI prep phase.
 
 ## Current Focus
-- Day 5: OOP later topics overview
+- Day 7: Environment variables and secrets
