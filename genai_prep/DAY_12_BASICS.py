@@ -5,10 +5,9 @@
 # - prints the result
 
 numbers = [1, 2, 3, 4, 5, 6]
-total = 0
+sum=0
+for i in numbers:
+    if i%2==0:
+        sum+=i
 
-for number in numbers:
-    if number % 2 == 0:
-        total += number
-
-print(total)
+print(sum)
