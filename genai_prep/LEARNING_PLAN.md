@@ -5,4 +5,4 @@ Use the full roadmap in [../GENAI_PREP_PLAN.md](../GENAI_PREP_PLAN.md).
 This folder contains the daily lessons and practice files for the GenAI prep phase.
 
 ## Current Focus
-- Day 12: FastAPI with request data
+- Day 14: Transition to a real provider
