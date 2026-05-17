@@ -256,3 +256,14 @@ Use this file after each study session.
 - Biggest mistake: Using short variable names like `A` and `B`, which made the code less readable
 - Feedback summary: Good Day 13 progress. You connected duplicate-finding with time complexity well, and the difference between `O(n^2)` and `O(n)` started to feel practical.
 - What to study next: Intermediate mini project
+
+## Gemini Free Tier Phase
+
+### Gemini Day 1
+- Topic: Gemini setup and first real API call
+- What I understood: Session started. The API key variable exists in `.env`, and the official SDK flow uses a client plus one model call.
+- What confused me: The SDK is not installed yet in this environment, so the real request has not been run.
+- Exercise status: Started
+- Biggest mistake: None yet
+- Feedback summary: Day 1 lesson and starter files were created in `gemini_free_tier`. The next step is to complete the starter and install `google-genai`.
+- What to study next: Finish the first real Gemini request and compare it with the earlier mock flow
