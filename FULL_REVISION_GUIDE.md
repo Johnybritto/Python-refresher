@@ -765,6 +765,83 @@ for number in numbers:
     seen[number] = True
 ```
 
+### 4.9 Binary Search Interval Pattern
+The hardest part is usually not `mid`.
+
+The hardest part is deciding what `low` and `high` mean.
+
+Ask first:
+- what is my search space?
+- is the right end included or excluded?
+
+#### Closed Interval: `[low, high]`
+Use this when both ends are valid indices.
+
+```python
+arr = [2, 5, 8, 12]
+target = 8
+
+low = 0
+high = len(arr) - 1
+
+while low <= high:
+    mid = (low + high) // 2
+
+    if arr[mid] == target:
+        print(mid)
+        break
+    elif arr[mid] < target:
+        low = mid + 1
+    else:
+        high = mid - 1
+```
+
+Pattern to remember:
+- `low = 0`
+- `high = len(arr) - 1`
+- loop with `while low <= high`
+- use this for normal Python index-based binary search
+
+Why:
+- `low` points to a real index
+- `high` points to a real index
+- when `low == high`, one element is still left to check
+
+#### Half-Open Interval: `[low, high)`
+Use this when `high` is one past the last valid index.
+
+```python
+arr = [2, 5, 8, 12]
+target = 8
+
+low = 0
+high = len(arr)
+
+while low < high:
+    mid = (low + high) // 2
+
+    if arr[mid] < target:
+        low = mid + 1
+    else:
+        high = mid
+
+print(low)
+```
+
+Pattern to remember:
+- `low = 0`
+- `high = len(arr)`
+- loop with `while low < high`
+- `high` itself is not a valid index
+
+#### Why Some Problems Use `1` And `len(arr) - 1`
+That is usually because:
+- the problem is using `1`-based positions
+- index `0` is being skipped on purpose
+- the search space is not normal array indices
+
+For beginner array search questions in Python, the safest starting pattern is usually the closed interval version.
+
 ---
 
 ## 5. Common Mistakes To Avoid
