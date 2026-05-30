@@ -16,7 +16,7 @@ Basics problem: Given `words = ["json", "prompt", "json", "reply"]`, count how m
 
 ## Day 4
 Gemini task: Ask the model to return JSON with exactly two keys and print the raw returned text.
-Basics problem: Given `data = {"name": "Ana", "age": 20}`, print `"valid"` only if both keys exist.
+Basics problem: Given one student dictionary, print `"valid"` only if `name` exists, `age` exists, and `age` is at least `18`.
 
 ## Day 5
 Gemini task: Wrap one Gemini call in `try` / `except` and print a friendly fallback message if the request fails.

@@ -276,3 +276,21 @@ Use this file after each study session.
 - Biggest mistake: The script printed the API key during testing, which should be removed in later versions.
 - Feedback summary: Good Day 2 progress. Prompt comparison is working, and the next useful step is to store Gemini outputs instead of only printing them.
 - What to study next: Read the response text carefully, store prompt and reply in a dictionary, and save the result to JSON
+
+### Gemini Day 3
+- Topic: Reading and saving Gemini responses
+- What I understood: A Gemini reply can be saved together with the original prompt, model name, and timestamp in a JSON file for later review.
+- What confused me: The main confusion was around what `OUTPUT_FILE` means and how the file-writing part works.
+- Exercise status: Completed
+- Biggest mistake: Printing the API key during testing and manually reading `.env` instead of relying only on `os.getenv(...)`
+- Feedback summary: Good Day 3 progress. The response-saving flow works, and the next step is to ask for a more structured reply shape from the model.
+- What to study next: Ask Gemini for JSON with an exact shape and inspect the raw returned text carefully
+
+### Gemini Day 4
+- Topic: Structured outputs
+- What I understood: A model can be guided toward a more predictable reply by asking for a JSON-style shape with exact keys instead of a normal paragraph.
+- What confused me: The main challenge was making the prompt specific enough and thinking about validation rules in the basics problem.
+- Exercise status: Completed
+- Biggest mistake: Keeping the prompt too broad at first instead of naming the exact keys clearly
+- Feedback summary: Good Day 4 progress. The idea of structured output is landing, and the next useful step is to make the Gemini call safer when requests fail.
+- What to study next: Wrap the Gemini call in `try` / `except` and print a friendly fallback message
