@@ -5,7 +5,7 @@ Use the full roadmap in [../GEMINI_FREE_TIER_NEXT_PHASE_PLAN.md](../GEMINI_FREE_
 This folder contains the daily lessons and practice files for the Gemini free-tier phase.
 
 ## Current Focus
-- Day 2: Prompt and input design
+- Day 3: Reading and saving Gemini responses
 
 ## How To Use This Folder
 - Read the day lesson file first

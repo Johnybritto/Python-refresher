@@ -1,0 +1,6 @@
+{
+  "prompt": "Explain what JSON is in one short beginner-friendly sentence.",
+  "reply": "JSON is a lightweight way to store and share data using a simple, text-based format that is easy for both humans and computers to read.",
+  "model": "gemini-3-flash-preview",
+  "timestamp": "2026-05-30 09:10:00"
+}

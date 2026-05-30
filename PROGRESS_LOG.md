@@ -267,3 +267,12 @@ Use this file after each study session.
 - Biggest mistake: None yet
 - Feedback summary: Day 1 lesson and starter files were created in `gemini_free_tier`. The next step is to complete the starter and install `google-genai`.
 - What to study next: Finish the first real Gemini request and compare it with the earlier mock flow
+
+### Gemini Day 2
+- Topic: Prompt and input design
+- What I understood: Two prompts about the same topic can produce different levels of clarity, and adding beginner-friendly instructions can shape the answer better.
+- What confused me: No extra notes were recorded for this session.
+- Exercise status: Completed
+- Biggest mistake: The script printed the API key during testing, which should be removed in later versions.
+- Feedback summary: Good Day 2 progress. Prompt comparison is working, and the next useful step is to store Gemini outputs instead of only printing them.
+- What to study next: Read the response text carefully, store prompt and reply in a dictionary, and save the result to JSON
