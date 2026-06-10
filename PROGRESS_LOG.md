@@ -294,3 +294,12 @@ Use this file after each study session.
 - Biggest mistake: Keeping the prompt too broad at first instead of naming the exact keys clearly
 - Feedback summary: Good Day 4 progress. The idea of structured output is landing, and the next useful step is to make the Gemini call safer when requests fail.
 - What to study next: Wrap the Gemini call in `try` / `except` and print a friendly fallback message
+
+### Gemini Day 5
+- Topic: Safe Gemini API patterns
+- What I understood: `try` / `except` can keep a beginner Gemini script from crashing when the API key is missing or a request fails.
+- What confused me: The risky setup also needs to be inside the protected part if it can fail before the model call starts.
+- Exercise status: Completed after revision
+- Biggest mistake: Creating the Gemini client before the `try` block, which allowed the script to crash before the fallback message could run
+- Feedback summary: Good Day 5 progress. The basics problem was correct, and the main Gemini script now handles failures more safely with a friendly fallback message.
+- What to study next: Build a tiny terminal chatbot that keeps history and stops cleanly on `exit`

@@ -5,7 +5,7 @@ Use the full roadmap in [../GEMINI_FREE_TIER_NEXT_PHASE_PLAN.md](../GEMINI_FREE_
 This folder contains the daily lessons and practice files for the Gemini free-tier phase.
 
 ## Current Focus
-- Day 5: Safe Gemini API patterns
+- Day 6: Terminal chatbot with history
 
 ## How To Use This Folder
 - Read the day lesson file first
