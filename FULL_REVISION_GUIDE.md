@@ -931,3 +931,91 @@ Your strongest long-term revision targets are:
 - handling errors safely
 - building small FastAPI routes
 - explaining time complexity in simple words
+
+---
+
+## 8. Gemini Tool Calling Revision
+
+### 8.1 When You Need A Tool
+Use plain code when the task is fixed and structured.
+
+Examples:
+- totals
+- filters
+- comparisons
+- exact lookups
+
+Use a model plus a tool when the user asks in flexible natural language and your app must connect that request to real data or actions.
+
+### 8.2 Core Production Idea
+- the model understands the user request
+- the tool gets exact data from a trusted source
+- the model explains the result naturally
+
+The tool is the trusted data/action layer.
+
+The model is the language and reasoning layer.
+
+### 8.3 Transaction Example Without A Model
+
+```python
+transactions = [
+    {"category": "food", "amount": 200, "month": "2026-05"},
+    {"category": "travel", "amount": 500, "month": "2026-05"},
+    {"category": "food", "amount": 100, "month": "2026-04"},
+]
+
+def get_total_for_month(transactions, month):
+    total = 0
+    for item in transactions:
+        if item["month"] == month:
+            total += item["amount"]
+    return total
+
+print(get_total_for_month(transactions, "2026-05"))
+```
+
+This is best when the input is already structured.
+
+### 8.4 Same Example With Gemini Function Calling
+
+```python
+from google import genai
+from google.genai import types
+
+transactions = [
+    {"category": "food", "amount": 200, "month": "2026-05"},
+    {"category": "travel", "amount": 500, "month": "2026-05"},
+    {"category": "food", "amount": 100, "month": "2026-04"},
+]
+
+def get_total_for_month(month: str) -> dict:
+    total = 0
+    for item in transactions:
+        if item["month"] == month:
+            total += item["amount"]
+    return {"month": month, "total": total}
+
+client = genai.Client()
+
+config = types.GenerateContentConfig(
+    tools=[get_total_for_month]
+)
+
+response = client.models.generate_content(
+    model="gemini-3.5-flash",
+    contents="How much did I spend last month? Use the tool if needed.",
+    config=config,
+)
+
+print(response.text)
+```
+
+In this example:
+- Gemini understands `"last month"`
+- the tool returns the exact total
+- Gemini turns the result into a natural answer
+
+### 8.5 Simple Rule To Remember
+- If rules are enough, use rules.
+- If language understanding is the hard part, add a model.

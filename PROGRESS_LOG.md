@@ -303,3 +303,12 @@ Use this file after each study session.
 - Biggest mistake: Creating the Gemini client before the `try` block, which allowed the script to crash before the fallback message could run
 - Feedback summary: Good Day 5 progress. The basics problem was correct, and the main Gemini script now handles failures more safely with a friendly fallback message.
 - What to study next: Build a tiny terminal chatbot that keeps history and stops cleanly on `exit`
+
+### Gemini Day 8
+- Topic: Tool calling basics
+- What I understood: A tool is a small trusted function that gets exact data or performs exact logic, while the model handles natural-language understanding and explanation.
+- What confused me: At first it felt like a model was unnecessary if plain code could already do the work, but the transaction example clarified that the model is useful when the user asks in flexible language.
+- Exercise status: Completed as revision
+- Biggest mistake: Treating toy math examples like the real reason tools matter in production instead of focusing on real data access and exact results
+- Feedback summary: Good Day 8 progress. The main production idea landed well: use plain code when rules are enough, and use model plus tool when you need language understanding on top of trusted data or actions.
+- What to study next: Wrap a Gemini call in a FastAPI `POST` route
