@@ -312,3 +312,12 @@ Use this file after each study session.
 - Biggest mistake: Treating toy math examples like the real reason tools matter in production instead of focusing on real data access and exact results
 - Feedback summary: Good Day 8 progress. The main production idea landed well: use plain code when rules are enough, and use model plus tool when you need language understanding on top of trusted data or actions.
 - What to study next: Wrap a Gemini call in a FastAPI `POST` route
+
+### Gemini Day 12
+- Topic: Tiny RAG-style prototype
+- What I understood: A basic retrieval flow can take one saved note, match it against a query, and build a simple answer from the retrieved note.
+- What confused me: The difference between using pre-made notes and doing real chunking still needs one more step of practice.
+- Exercise status: Completed with note
+- Biggest mistake: Treating retrieval as fully finished before adding an actual chunking step.
+- Feedback summary: Retrieval is working at a beginner level, but real chunk creation has not been implemented yet. Current notes behave like manual chunks, so chunking should be marked as pending rather than complete.
+- What to study next: Gemini Day 13 eval and monitoring basics
