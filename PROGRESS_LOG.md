@@ -321,3 +321,9 @@ Use this file after each study session.
 - Biggest mistake: Treating retrieval as fully finished before adding an actual chunking step.
 - Feedback summary: Retrieval is working at a beginner level, but real chunk creation has not been implemented yet. Current notes behave like manual chunks, so chunking should be marked as pending rather than complete.
 - What to study next: Gemini Day 13 eval and monitoring basics
+
+## Current Active Phase
+- Phase: `GenAI Foundations Phase 01`
+- Day started: `Day 1`
+- Focus: understanding GenAI basics before moving into retrieval, RAG, and tools
+- Folder: `genai_foundations_phase_01`
