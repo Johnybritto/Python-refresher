@@ -10,8 +10,8 @@
 Build a strong practical foundation in GenAI basics before moving into retrieval, RAG, tools, and larger AI app systems.
 
 ## Current Active Day
-- Day: `Day 2`
-- Topic: `Tokens and context windows`
+- Day: `Day 3`
+- Topic: `Prompt quality basics`
 - Phase folder: [genai_foundations_phase_01](D:/Projects/python training/genai_foundations_phase_01)
 
 ## Current Daily Focus

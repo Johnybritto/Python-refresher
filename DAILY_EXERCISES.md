@@ -12,12 +12,12 @@ Use this file to track one small exercise per study day.
 ### Day 2
 - Exercise: Take one long paragraph and shorten it into a tighter prompt.
 - Goal: Practice thinking about context size.
-- Status: `in progress`
+- Status: `completed`
 
 ### Day 3
 - Exercise: Rewrite one weak prompt into a clearer prompt with constraints.
 - Goal: Improve prompt quality.
-- Status: `not started`
+- Status: `in progress`
 
 ### Day 4
 - Exercise: Write one system instruction and one user prompt for the same task.

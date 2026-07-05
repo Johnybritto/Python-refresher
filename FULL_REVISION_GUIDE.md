@@ -971,10 +971,48 @@ Weak prompt:
 Better prompt:
 `Explain Python dictionaries to a beginner in 3 simple points with 1 example.`
 
-### 8.4 Simple Rule To Remember
+### 8.4 Prompt Quality Basics
+A weak prompt is often too broad or too vague.
+
+Weak prompts often miss:
+- the exact topic
+- the audience
+- the answer format
+- the answer size
+
+Example of a weak prompt:
+`Teach me coding.`
+
+Why it is weak:
+- it does not say which coding topic
+- it does not say how deep the answer should go
+- it does not say what output format is wanted
+
+### 8.5 Constraints Improve Output
+Constraints are small limits or instructions inside a prompt.
+
+Useful constraints:
+- `for a beginner`
+- `in 3 bullet points`
+- `with 1 example`
+- `in simple language`
+
+These help because they:
+- reduce vagueness
+- guide the answer shape
+- make the output more useful
+
+Weak prompt:
+`Tell me about functions.`
+
+Better prompt:
+`Explain Python functions to a beginner in 4 short bullet points with 1 example.`
+
+### 8.6 Simple Rule To Remember
 - more text usually means more tokens
 - long chats can become messy because context space is limited
 - keep only the useful details in the prompt
+- better prompts usually name the topic, audience, format, and length
 
 ---
 
