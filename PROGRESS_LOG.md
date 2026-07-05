@@ -324,6 +324,6 @@ Use this file after each study session.
 
 ## Current Active Phase
 - Phase: `GenAI Foundations Phase 01`
-- Day started: `Day 1`
+- Day started: `Day 2`
 - Focus: understanding GenAI basics before moving into retrieval, RAG, and tools
 - Folder: `genai_foundations_phase_01`

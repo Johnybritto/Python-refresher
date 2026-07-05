@@ -26,7 +26,14 @@ This phase keeps the ideas small, practical, and testable.
 - 15 min: learn one new concept
 - 20 min: inspect 2 or 3 examples
 - 10 min: do one small exercise
+- 5 min: do one mini challenge question
 - 5 min: write one short note about what was confusing
+
+## Practice Style
+- each day includes one small exercise
+- most days also include one mini challenge question
+- early challenges are beginner-friendly, not full hard LeetCode problems
+- later phases can include more coding-heavy interview-style practice if you want
 
 ## Main Topics
 - GenAI vs normal software behavior

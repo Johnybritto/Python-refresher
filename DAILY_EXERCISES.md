@@ -7,12 +7,12 @@ Use this file to track one small exercise per study day.
 ### Day 1
 - Exercise: Write 3 short prompts that ask an AI to explain `for` loops.
 - Goal: Notice how wording changes the quality of the answer.
-- Status: `not started`
+- Status: `completed`
 
 ### Day 2
 - Exercise: Take one long paragraph and shorten it into a tighter prompt.
 - Goal: Practice thinking about context size.
-- Status: `not started`
+- Status: `in progress`
 
 ### Day 3
 - Exercise: Rewrite one weak prompt into a clearer prompt with constraints.

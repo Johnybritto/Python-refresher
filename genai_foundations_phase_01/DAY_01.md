@@ -95,3 +95,29 @@ Send me your rewritten prompt for:
 `Teach me loops.`
 
 Then I will review it and give the next hint or the next step.
+
+## Your Attempt
+`Teach me for loops in 3 simple steps. I am a beginner in Python.`
+
+## Quick Review
+What you did well:
+- you made the topic specific: `for loops`
+- you asked for a format: `3 simple steps`
+- you told the audience: `beginner`
+
+What to improve next:
+- fix small grammar so the prompt is clearer
+- optionally ask for one tiny example
+
+Stronger version:
+`Teach me Python for loops in 3 simple steps for a beginner, with 1 small example.`
+
+## Practice Challenge
+This phase will include challenge-style questions too, but they will be small and beginner-friendly first.
+
+Day 1 challenge:
+
+Which prompt is better, and why?
+
+1. `Explain lists.`
+2. `Explain Python lists to a beginner in 3 short bullet points with 1 example.`

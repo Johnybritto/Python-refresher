@@ -106,6 +106,21 @@ Main areas:
 - FastAPI wrapper
 - retrieval basics
 
+### GenAI Foundations Phase 01
+Status: `in progress`
+
+Main areas:
+- tokens
+- context windows
+- prompt quality
+- system instructions
+- output variability
+- structured output
+- validation
+- tools
+- evaluation
+- memory vs chat history
+
 ### DevOps / Platform Direction
 Status: `planned`
 

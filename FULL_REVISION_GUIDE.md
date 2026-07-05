@@ -934,9 +934,103 @@ Your strongest long-term revision targets are:
 
 ---
 
-## 8. Gemini Tool Calling Revision
+## 8. GenAI Foundations Revision
 
-### 8.1 When You Need A Tool
+### 8.1 Tokens
+A token is a small chunk of text that a model reads.
+
+Important idea:
+- a token is not always one full word
+- punctuation also takes space
+- longer prompts usually use more tokens
+
+Quick example:
+- `cat` uses fewer tokens than a long instruction with many words
+
+### 8.2 Context Window
+A context window is the amount of text the model can pay attention to at one time.
+
+That can include:
+- the current prompt
+- earlier chat messages
+- pasted notes or documents
+
+Important idea:
+- the context window is limited
+- if too much text is included, the model may miss details or give weaker answers
+
+### 8.3 Why It Matters
+Shorter and more relevant prompts are usually better because they:
+- stay focused
+- use less context space
+- make the task clearer
+
+Weak prompt:
+`Tell me everything about Python and also help me understand dictionaries somewhere in all this.`
+
+Better prompt:
+`Explain Python dictionaries to a beginner in 3 simple points with 1 example.`
+
+### 8.4 Simple Rule To Remember
+- more text usually means more tokens
+- long chats can become messy because context space is limited
+- keep only the useful details in the prompt
+
+---
+
+## 9. Retrieval Basics Revision
+
+### 9.1 What Retrieval Means
+Retrieval means finding the most useful saved information before answering a question.
+
+Simple idea:
+- the model should not guess when useful source text already exists
+- first find the right information
+- then answer using that information
+
+Example:
+- question: `What does our refund policy say about cancellations?`
+- retrieval step: find the saved note or document section about cancellations
+
+### 9.2 Similarity Search
+Similarity search tries to find text that is closest in meaning to the question.
+
+Keyword search:
+- looks for exact words
+
+Similarity search:
+- tries to match meaning
+
+Simple example:
+- question: `How do I stop my plan?`
+- a useful note might say `subscription cancellation steps`
+
+The words are different, but the meaning is close.
+
+### 9.3 What RAG Means
+RAG means Retrieval-Augmented Generation.
+
+Simple flow:
+1. retrieve useful source text
+2. give that source text to the model
+3. let the model answer using that context
+
+Short version:
+- retrieval gets the facts
+- generation turns them into a natural answer
+
+### 9.4 Simple Rule To Remember
+- bad retrieval leads to bad answers
+- retrieval helps reduce hallucinations, but does not fully remove them
+- keep the flow simple first:
+
+`saved information -> retrieve -> answer`
+
+---
+
+## 10. Gemini Tool Calling Revision
+
+### 10.1 When You Need A Tool
 Use plain code when the task is fixed and structured.
 
 Examples:
@@ -947,7 +1041,7 @@ Examples:
 
 Use a model plus a tool when the user asks in flexible natural language and your app must connect that request to real data or actions.
 
-### 8.2 Core Production Idea
+### 10.2 Core Production Idea
 - the model understands the user request
 - the tool gets exact data from a trusted source
 - the model explains the result naturally
@@ -956,7 +1050,7 @@ The tool is the trusted data/action layer.
 
 The model is the language and reasoning layer.
 
-### 8.3 Transaction Example Without A Model
+### 10.3 Transaction Example Without A Model
 
 ```python
 transactions = [
@@ -977,7 +1071,7 @@ print(get_total_for_month(transactions, "2026-05"))
 
 This is best when the input is already structured.
 
-### 8.4 Same Example With Gemini Function Calling
+### 10.4 Same Example With Gemini Function Calling
 
 ```python
 from google import genai
@@ -1016,6 +1110,6 @@ In this example:
 - the tool returns the exact total
 - Gemini turns the result into a natural answer
 
-### 8.5 Simple Rule To Remember
+### 10.5 Simple Rule To Remember
 - If rules are enough, use rules.
 - If language understanding is the hard part, add a model.
