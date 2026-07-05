@@ -14,6 +14,18 @@
 
 ## Day 3
 - Topic: Prompt quality basics
-- Status: `started`
-- What you are working on: spotting weak prompts, adding constraints, and rewriting vague prompts more clearly
-- Notes: this day builds directly on Day 1 and Day 2 by making prompts more specific and more focused
+- Status: `completed`
+- What you sent back: reasons why vague prompts are weak, a better function prompt choice, and a clearer strings prompt
+- Notes: good progress on adding topic, audience, format, and examples
+
+## Day 4
+- Topic: System instructions vs user prompt
+- Status: `completed`
+- What you sent back: the dictionary user prompt, the role-giving instruction, and a guided function prompt
+- Notes: good understanding; remember that system instructions guide behavior while user prompts give the current task
+
+## Day 5
+- Topic: Output variability and temperature
+- Status: `completed`
+- What you sent back: Day 5 practice code for removing duplicates from a list
+- Notes: code is correct; remember that GenAI output can vary because models use probabilities, and low temperature is better for code or strict formats

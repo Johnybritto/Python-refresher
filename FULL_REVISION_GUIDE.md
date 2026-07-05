@@ -1008,11 +1008,87 @@ Weak prompt:
 Better prompt:
 `Explain Python functions to a beginner in 4 short bullet points with 1 example.`
 
-### 8.6 Simple Rule To Remember
+### 8.6 System Instructions vs User Prompt
+A user prompt is the message typed by the user.
+
+Examples:
+- `Explain Python dictionaries to a beginner.`
+- `Write a function to count vowels.`
+
+The user prompt usually gives the task.
+
+A system instruction is a higher-level rule given before the user prompt.
+
+System instructions can define:
+- the model's role
+- the answer style
+- rules to follow
+- things to avoid
+
+Example system instruction:
+`You are a beginner-friendly Python tutor. Use simple language and short examples.`
+
+Example user prompt:
+`Explain functions.`
+
+Important idea:
+- the system instruction guides behavior
+- the user prompt gives the current task
+- a good answer should follow both
+
+### 8.7 Base Request vs Guided Request
+A base request only gives the task.
+
+Base request:
+`Explain functions.`
+
+A guided request adds role, audience, style, or output limits.
+
+Guided request:
+`You are a beginner-friendly Python tutor. Explain Python functions in 3 or 4 simple points with 1 small example.`
+
+Guided requests are usually better because they give the model more useful direction.
+
+### 8.8 Output Variability and Temperature
+Normal code usually gives the same output for the same input.
+
+GenAI output can vary because the model generates text using probabilities.
+
+The same prompt can produce:
+- slightly different wording
+- different examples
+- a different order of points
+- sometimes a stronger or weaker answer
+
+Temperature is a setting that controls how predictable or creative the answer can be.
+
+Simple idea:
+- lower temperature means more predictable
+- higher temperature means more varied or creative
+
+Use low temperature for:
+- code help
+- factual answers
+- structured output
+- valid JSON or strict formats
+
+Use higher temperature for:
+- brainstorming
+- creative writing
+- naming ideas
+- exploring many options
+
+Example:
+- `Return valid JSON with exactly 3 keys.` -> low temperature
+- `Brainstorm 10 fun app ideas for beginners.` -> higher temperature
+
+### 8.9 Simple Rule To Remember
 - more text usually means more tokens
 - long chats can become messy because context space is limited
 - keep only the useful details in the prompt
 - better prompts usually name the topic, audience, format, and length
+- system instructions guide behavior; user prompts give the task
+- low temperature is better for consistency; higher temperature is better for variety
 
 ---
 

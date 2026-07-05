@@ -10,8 +10,8 @@
 Build a strong practical foundation in GenAI basics before moving into retrieval, RAG, tools, and larger AI app systems.
 
 ## Current Active Day
-- Day: `Day 3`
-- Topic: `Prompt quality basics`
+- Day: `Day 5`
+- Topic: `Output variability and temperature`
 - Phase folder: [genai_foundations_phase_01](D:/Projects/python training/genai_foundations_phase_01)
 
 ## Current Daily Focus
