@@ -1090,6 +1090,171 @@ Example:
 - system instructions guide behavior; user prompts give the task
 - low temperature is better for consistency; higher temperature is better for variety
 
+### 8.10 Structured Output Basics
+Structured output means asking the model to return data in a fixed shape instead of loose free text.
+
+Common example:
+- JSON with exact keys
+
+Why apps prefer it:
+- easier to parse
+- easier to validate
+- more reliable than long free-form answers
+
+Free-text example:
+`The sentiment looks positive and the score is around 0.8.`
+
+Structured example:
+
+```json
+{
+  "sentiment": "positive",
+  "score": 0.8
+}
+```
+
+Simple rule:
+- use structured output when code needs to read the answer safely
+
+### 8.11 Parsing and Validation
+Parsing means reading the returned structure in code.
+
+Validation means checking that the structure really matches what you expected.
+
+Important idea:
+- something can look correct to a human and still break code
+
+Useful checks:
+- required keys exist
+- value types are correct
+- lists or strings are not missing
+
+Python example:
+
+```python
+result = {"topic": "lists", "level": "beginner"}
+
+if "topic" in result and "level" in result:
+    print("Valid shape")
+else:
+    print("Missing required keys")
+```
+
+Simple rule:
+- do not trust model output just because it looks neat
+
+### 8.12 Reusable Model Helper Design
+A reusable helper keeps model-call logic in one place.
+
+This is useful because it helps you:
+- avoid repeating the same request code everywhere
+- keep prompting separate from parsing
+- return a safe fallback when something fails
+
+Beginner-friendly helper idea:
+
+```python
+def get_model_reply(prompt):
+    try:
+        reply = f"Mock reply for: {prompt}"
+        return {"ok": True, "reply": reply}
+    except Exception:
+        return {"ok": False, "reply": "Fallback reply"}
+```
+
+Simple rule:
+- one place for calling
+- one place for parsing
+- one safe fallback
+
+### 8.13 Chat History vs Memory
+Chat history is the earlier messages in the current conversation.
+
+Memory is saved information that can be reused later.
+
+Important difference:
+- chat history is temporary conversation context
+- memory is stored knowledge or saved facts
+
+Example:
+- chat history: what was said 5 messages ago
+- memory: saved user preference like `prefers short Python examples`
+
+Simple rule:
+- chat history is not the same as true long-term memory
+
+### 8.14 Failure Modes
+Failure modes are common ways GenAI output can go wrong.
+
+Important examples:
+- wrong facts
+- vague answers
+- overconfident wording
+- invalid format
+- missing required details
+
+Important idea:
+- confidence is not correctness
+
+When reviewing an answer, ask:
+- is it actually correct?
+- did it follow the format?
+- did it answer the real question?
+- did it invent anything unsupported?
+
+### 8.15 Tool Calling Basics
+Tool calling means the model can choose to use an external helper instead of answering only from text generation.
+
+Simple flow:
+1. user asks something
+2. model decides a tool is needed
+3. helper code gets exact data
+4. model explains the result
+
+Good use cases:
+- calculations
+- file lookup
+- database lookup
+- API calls
+
+Simple rule:
+- the model handles language
+- the tool handles trusted data or actions
+
+### 8.16 Evaluation Basics
+Evaluation means checking whether outputs are good enough for the task.
+
+Two simple styles:
+- subjective review: `Does this answer feel useful and clear?`
+- rule-based review: `Did it return valid JSON with all required keys?`
+
+Helpful things to track:
+- good outputs
+- weak outputs
+- failure cases
+
+Beginner evaluation questions:
+- was the answer correct?
+- was the format correct?
+- was it clear?
+- was anything missing?
+
+### 8.17 Phase 1 End Goals
+By the end of GenAI Foundations, you should be able to explain simply:
+- what a model is doing at a basic level
+- why prompt quality changes output quality
+- why token and context limits matter
+- why confident answers can still be wrong
+- why structured output helps apps
+- why validation and evaluation matter
+- why chat history is not true memory
+
+You should also be able to build small examples such as:
+- one clean GenAI helper
+- one structured output example
+- one validation example
+- one short evaluation script
+
 ---
 
 ## 9. Retrieval Basics Revision
