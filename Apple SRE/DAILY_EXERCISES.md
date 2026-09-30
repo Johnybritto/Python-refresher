@@ -10,17 +10,28 @@
 - [x] Explain time and extra-space complexity
 - [ ] Reattempt later without reading the previous solution
 
-## Current exercise: Day 1, P02 — First Unique Character
+## Completed: Day 1, P02 — First Unique Character
 
-- [ ] Read `day01/DAY_01_P02.md`
-- [ ] Clarify what counts as the same character
-- [ ] Build the frequency dictionary
-- [ ] Find the first character whose count is one
-- [ ] Make all supplied tests pass
-- [ ] Explain time and extra-space complexity
-- [ ] Submit the code for tutor review
+- [x] Read `day01/DAY_01_P02.md`
+- [x] Clarify what counts as the same character
+- [x] Build the frequency dictionary
+- [x] Find the first character whose count is one
+- [x] Make all supplied tests pass
+- [x] Explain time and extra-space complexity
+- [ ] Reattempt later without reading the previous solution
 
-## Next exercises
+## Completed: Day 1, P03 — Top Error-Producing Endpoints
 
-- P03 Error Endpoint Counter — locked until P02 review
-- P04 Top-K Frequent Items — optional, after Day 1 core work
+- [x] Read `day01/DAY_01_P03.md`
+- [x] Parse each JSON line without materializing the iterable
+- [x] Validate the object, path, and status
+- [x] Count only HTTP 500–599 responses
+- [x] Count every invalid input record
+- [x] Sort by count descending and path ascending
+- [x] Make all supplied tests pass
+- [x] Explain time and extra-space complexity
+- [ ] Reattempt later without reading the completed solution
+
+## Next exercise
+
+- P04 Top-K Frequent Items — unlocked optional exercise

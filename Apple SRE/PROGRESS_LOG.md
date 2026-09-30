@@ -5,8 +5,8 @@ Mark an exercise solved only after an independent implementation and passing tes
 | ID | Priority | Solved | Tests pass | Complexity explained | Reattempt passed |
 |---|---|---|---|---|---|
 | P01 | P0 | [x] | [x] | [x] | [ ] |
-| P02 | P0 | [ ] | [ ] | [ ] | [ ] |
-| P03 | P0 | [ ] | [ ] | [ ] | [ ] |
+| P02 | P0 | [x] | [x] | [x] | [ ] |
+| P03 | P0 | [x] | [x] | [x] | [ ] |
 | P04 | P1 | [ ] | [ ] | [ ] | [ ] |
 | P05 | P0 | [ ] | [ ] | [ ] | [ ] |
 | P06 | P0 | [ ] | [ ] | [ ] | [ ] |
