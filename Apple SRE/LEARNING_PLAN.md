@@ -35,5 +35,8 @@ complete the first two core exercises and return to the remaining core work late
 4. Spend 20 minutes testing and explaining the result.
 5. Attempt the extra exercise only after the core work.
 
-Only P01 is unlocked now. The next exercise should be added after P01 is attempted and reviewed,
-so each lesson remains focused on one small problem.
+Day 1 core exercises P01–P03 are complete. P05's implementation passes its checks;
+its remaining discussion is deferred at the learner's request. P06's set-based
+implementation passes checks; its O(1)-space optimization and discussion are deferred.
+P07 passes its checks; its remaining discussion is deferred at the learner's request.
+P08 Merge Sorted Lists is the active optional extension. P04 remains optional.

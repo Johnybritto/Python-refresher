@@ -52,7 +52,8 @@ def summarize_errors(lines: Iterable[str], k: int) -> dict:
         key=lambda item: (-item[1], item[0]),
     )
     top_errors = sorted_errors[:k] if k > 0 else []
-
+    #print({"top": top_errors,
+    #    "invalid_lines": invalid_lines,})
     return {
         "top": top_errors,
         "invalid_lines": invalid_lines,
