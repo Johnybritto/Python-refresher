@@ -2,6 +2,37 @@
 
 
 def is_valid_ipv4(address: str) -> bool:
+
+ # split and check 4 parts are there or not 
+    chunks = address.split('.')
+    if len(chunks) != 4:
+        return False
+
+    for chunk in chunks:
+
+        #check each part is digit or not 
+
+        if not chunk.isdigit():
+            return False
+
+        # check each char in chunk is number or not 
+
+        for char in chunk:
+            if char not in '0123456789':
+                return False
+
+        #check each part is not have a leading 0  eacmple 10.1.01.1
+
+        if len(chunk) > 1 and chunk[0] == "0":
+            return False
+
+      # chek whether they fall in the octet 
+        value = int(chunk)
+        if value <0 or value >255:
+            return False
+
+    return True
+        
     """Accept four ASCII decimal octets; reject whitespace and leading zeros."""
     # TODO: Attempt manually before asking for stronger hints.
     raise NotImplementedError("Implement is_valid_ipv4 before running checks")
