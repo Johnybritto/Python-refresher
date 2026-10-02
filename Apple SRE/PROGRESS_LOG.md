@@ -15,7 +15,7 @@ Mark an exercise solved only after an independent implementation and passing tes
 | P09 | P0 | [ ] | [x] | [ ] | [ ] |
 | P10 | P0 | [ ] | [x] | [ ] | [ ] |
 | P11 | P0 | [ ] | [x] | [ ] | [ ] |
-| P12 | P1 | [ ] | [ ] | [ ] | [ ] |
+| P12 | P1 | [ ] | [x] | [ ] | [ ] |
 | P13 | P0 | [ ] | [ ] | [ ] | [ ] |
 | P14 | P0 | [ ] | [ ] | [ ] | [ ] |
 | P15 | P0 | [ ] | [ ] | [ ] | [ ] |
@@ -27,6 +27,9 @@ Mark an exercise solved only after an independent implementation and passing tes
 
 ## Current session
 
+- P12 Binary Search passes all 16 checks after correcting value comparisons and
+  the inclusive loop condition. Learner identified indices 2 and 3 in the range
+  [2, 3]. Complexity explanation, first-match follow-up, and unaided reattempt pending.
 - P11 Merge Intervals passes all 11 checks after correcting tuple assignment,
   touching-endpoint handling, and input mutation. Explanation and unaided reattempt
   pending. See [Day 3 review notes](day03/REVIEW_NOTES.md) for issues and corrections.
@@ -54,6 +57,8 @@ Mark an exercise solved only after an independent implementation and passing tes
 
 | Date / problem | What failed | Why it failed | Rule to remember | Reattempt result |
 |---|---|---|---|---|
+| P12 | Compared `m` with target | Confused index with value | Compare `nums[m]` with target | Corrected; all checks pass; unaided reattempt pending |
+| P12 | Skipped final candidate, including `[5]` | Used `l < r` for inclusive boundaries | Continue while `l <= r`; equality means one candidate remains | Corrected; all checks pass; unaided reattempt pending |
 | 2026-10-02 / P09 | Returned 1 for `abcdef` | Used `i - j + 1` for window length | Inclusive length is right minus left plus one: `j - i + 1` | Correction passes checks; unaided reattempt pending |
 | 2026-10-02 / P11 | Tuple assignment raised `TypeError` | Tuples are immutable | Replace the entire tuple | Correction passes checks; unaided reattempt pending |
 | 2026-10-02 / P11 | Touching intervals kept separate | Used `<=` to detect separation | Closed intervals are separate only when last end < next start | Correction passes checks; unaided reattempt pending |

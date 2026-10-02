@@ -97,7 +97,7 @@ Reattempt later without the hint.
 
 Remaining discussion deferred at your request.
 
-## Active: Day 3, P11 — Merge Intervals
+## Implementation reviewed: Day 3, P11 — Merge Intervals
 
 - [ ] Answer the level check in `day03/DAY_03_P11.md`
 - [x] Attempt `merge_intervals` in `day03/merge_intervals.py`
@@ -106,6 +106,19 @@ Remaining discussion deferred at your request.
 - [ ] Discuss half-open intervals during review
 
 Review issues and corrections: [Day 3 review notes](day03/REVIEW_NOTES.md).
+
+Remaining explanation and unaided reattempt deferred while moving on.
+
+## Active: Day 3, P12 — Binary Search (optional extension)
+
+- [ ] Answer the level check in `day03/DAY_03_P12.md`
+- [x] Attempt `binary_search` in `day03/binary_search.py`
+- [x] Pass checks for empty input, boundaries, missing targets, and duplicates
+- [ ] Explain termination and time and extra-space complexity
+- [ ] Discuss returning the first matching index during review
+
+Both review corrections pass all 16 checks. Inclusive-boundary explanation and
+examples are recorded in [Day 3 review notes](day03/REVIEW_NOTES.md).
 
 ## Optional backlog
 

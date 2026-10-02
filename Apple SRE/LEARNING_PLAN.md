@@ -42,6 +42,7 @@ P07 passes its checks; its remaining discussion is deferred at the learner's req
 P08 passed its supplied checks; its remaining discussion is deferred.
 P09 passes checks after a hinted correction; discussion and unaided reattempt pending.
 P10 passes its supplied checks; remaining discussion deferred.
-Day 3, P11 Merge Intervals is active. P12 Binary Search is the optional extension.
+Day 3, P12 Binary Search is the active optional extension.
+P12 passes all checks after review corrections; explanation and unaided reattempt pending.
 P11 passes checks after review corrections; explanation and unaided reattempt pending.
 P04 remains optional.

@@ -42,5 +42,38 @@ with the last merged interval.
   `sorted_intervals` and `i` to `interval`; move the docstring immediately under
   `def` and remove the unreachable TODO/raise after `return`.
 
+## P12: Binary Search
+
+Two issues in the first attempt are now corrected:
+
+- Compare `nums[m]` with `target`, not `m`. The middle index identifies a position;
+  the value at that position determines which half to search.
+- Use `while l <= r` for this inclusive-boundary implementation. With `l < r`,
+  a single remaining candidate is skipped; `[5]` with target `5` returned `-1`.
+
+Both boundary indices are included in the candidate range:
+
+| Boundary state | Meaning |
+|---|---|
+| `l < r` | Multiple candidates remain |
+| `l == r` | One candidate remains and must be checked |
+| `l > r` | The candidate range is empty; stop |
+
+For `l = 3, r = 3`, index 3 is the only candidate. The inclusive range length is
+`r - l + 1 = 1`. For `l = 2, r = 3`, indices 2 and 3 remain, as confirmed in the
+lesson. The loop condition depends on the boundary convention; this exercise
+uses inclusive boundaries initialized to `0` and `len(nums) - 1`.
+
+After an unsuccessful comparison, `l = m + 1` or `r = m - 1` excludes the middle
+position already checked. The range shrinks each iteration, ensuring termination.
+Empty input starts with `l = 0, r = -1`, so the loop is skipped correctly.
+
+- Current result: all 16 supplied checks pass after the corrections.
+- Complexity: O(log n) time for nonempty input, O(1) extra space.
+- Suggested cleanup remains: use `left`, `right`, and `mid`; move the docstring
+  directly under `def` and remove unreachable starter code after `return`.
+- Learner complexity explanation, first-match follow-up, and unaided reattempt
+  remain pending.
+
 Passing checks is recorded separately from the learner's complexity explanations
-and unaided reattempts. Reattempt P09 and P11 without consulting the corrections.
+and unaided reattempts. Reattempt P09, P11, and P12 without consulting the corrections.
