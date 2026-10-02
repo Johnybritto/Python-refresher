@@ -31,8 +31,10 @@ Local P IDs remain stable; `Supplement` means no exact source exercise.
 
 | Source | Priority | Status |
 |---|---|---|
-| AP1 | P0 | Active starter; no implementation yet |
-| AP2–AP6 | P0 | Pending, in source order |
+| AP1 | P0 | Supplied checks pass; long-digit guard and unaided reattempt pending |
+| AP2 | P0 | Supplied checks pass; learner explanation pending |
+| AP3 | P0 | Supplied checks pass; explanation and unaided reattempt pending |
+| AP4–AP6 | P0 | Pending, in source order |
 | C2 | P0 | Counting partly covered; dedicated most-frequent task pending |
 | C7 | P0 | Set solution passes; O(1)-space slow/fast version pending |
 | A1 outline | P0 | Pending; implementation remains P1 |
@@ -42,7 +44,16 @@ Local P IDs remain stable; `Supplement` means no exact source exercise.
 
 ## Current session
 
-- Reconciled against the user-supplied seven-day plan. AP1 is active; SLO Summary
+- AP2 review: correct round-robin distribution; supplied checks pass. Cleaned docstring,
+  unreachable starter code, spacing and variable names. O(N + M) time and returned
+  storage, O(1) additional working space. Next: explain balance and direct-to-file output.
+- AP3 supplied checks pass after encoding, symlink, dictionary key and exception
+  corrections. Streams file lines and returns sorted filenames. See
+  [review notes](priority_drills/REVIEW_NOTES.md) for all issues and complexity.
+- AP1 leading-zero comparison corrected; supplied checks pass. Very long numeric
+  input can still raise during integer conversion; length guard pending.
+
+- Reconciled against the user-supplied seven-day plan. AP4 is next; SLO Summary
   is deferred supplemental work. Historical test results and pending explanations
   remain intact. See PLAN_MAPPING.md for full source coverage.
 - P12 Binary Search passes all 16 checks after correcting value comparisons and

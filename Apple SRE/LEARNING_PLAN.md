@@ -13,11 +13,11 @@ Preserve passing work; do not treat passing tests as independent mastery.
 
 ## P0 first: next coding sequence
 
-1. **AP1 IPv4 validation — active.** Manual parsing, octet count/range,
+1. **AP1 IPv4 validation — supplied checks pass; robustness repair pending.** Manual parsing, octet count/range,
    ASCII characters, explicit whitespace/leading-zero policy.
-2. **AP2 N file lines into M buckets.** Balanced sizes, empty input, invalid M,
+2. **AP2 N file lines into M buckets — supplied checks pass; explanation pending.** Balanced sizes, empty input, invalid M,
    large-file memory and I/O tradeoffs.
-3. **AP3 Prefix-matching files and line counts.** Deterministic output,
+3. **AP3 Prefix-matching files and line counts — supplied checks pass; unaided retry pending.** Deterministic output,
    unreadable/missing files, nesting and symlink policy.
 4. **AP4 START/END log correlation.** Request IDs, timestamps, duplicates,
    missing partners and out-of-order records.

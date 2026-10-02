@@ -24,9 +24,9 @@ Local P IDs remain stable; priorities below supersede the old labels.
 | A2 Retries | P1 | P15 planned | Eligible failures, deadlines, backoff/jitter, idempotency |
 | A3 Config diff | P1 | P16 planned | Deterministic diff and safe execution |
 | A4 Log error rate | P1 | P13 starter/P03 parser partly related | Population, time window, invalid records; coordinate AP7 |
-| AP1 IPv4 validation | P0 | New starter | Active |
-| AP2 N lines to M buckets | P0 | Not implemented | Next |
-| AP3 Prefix file search/count | P0 | Not implemented | After AP2 |
+| AP1 IPv4 validation | P0 | Supplied checks pass | Long-digit guard, explanation and unaided reattempt pending |
+| AP2 N lines to M buckets | P0 | Supplied checks pass | Explanation and large-file discussion pending |
+| AP3 Prefix file search/count | P0 | Supplied checks pass | Explanation and unaided reattempt pending |
 | AP4 START/END correlation | P0 | Not implemented; distinct from P03 | After AP3 |
 | AP5 p95 latency | P0 | Not implemented | After AP4 |
 | AP6 Tail last N lines | P0 | P10 deque is background only | After AP5 |

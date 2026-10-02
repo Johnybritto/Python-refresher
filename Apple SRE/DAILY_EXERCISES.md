@@ -130,14 +130,32 @@ Remaining discussion and unaided reattempt deferred while moving to Day 4.
 - [ ] Explain empty-input behavior and time and space complexity
 - [ ] Discuss per-service summaries during review
 
-## Active: AP1 — IPv4 Validation (P0)
+## Implementation reviewed: AP1 — IPv4 Validation (P0)
 
 - [ ] Answer the level check in `priority_drills/AP1_IPV4.md`
-- [ ] Attempt `is_valid_ipv4` in `priority_drills/ipv4_validation.py`
-- [ ] Pass valid, malformed, range, whitespace, leading-zero and Unicode checks
+- [x] Attempt `is_valid_ipv4` in `priority_drills/ipv4_validation.py`
+- [x] Pass supplied valid, malformed, range, whitespace, leading-zero and Unicode checks
 - [ ] Explain correctness, complexity and changed policy
 
-Next new tasks: AP2 → AP3 → AP4 → AP5 → AP6.
+AP1 still needs a length guard before integer conversion for very long numeric
+parts, an explanation, and an unaided reattempt after the leading-zero correction.
+
+## AP2 — Line Buckets (P0): code checks pass
+
+- [ ] Answer the level check in `priority_drills/AP2_LINE_BUCKETS.md`
+- [x] Attempt `split_lines` in `priority_drills/line_buckets.py`
+- [x] Pass balanced-size, generator, independent-bucket, line-preservation and invalid-count checks
+- [ ] Explain complexity and why bucket sizes differ by at most one
+- [ ] Discuss direct-to-file output for large inputs
+
+## Reviewed: AP3 — Prefix File Line Counts (P0)
+
+- [ ] Answer the level check in `priority_drills/AP3_PREFIX_COUNT.md`
+- [x] Implement `count_prefix_lines` in `priority_drills/prefix_line_count.py`
+- [x] Pass filename matching, sorted output, empty/missing directory, symlink and read-error checks
+- [ ] Explain time, memory, and the nonrecursive policy
+
+Next new tasks: AP4 → AP5 → AP6.
 P0 review alongside these: C2 most-frequent item, C7 slow/fast pointers,
 C6 unaided reattempt, existing core explanations, and A1 health-checker outline.
 See [the revised plan](LEARNING_PLAN.md) and [source mapping](PLAN_MAPPING.md).

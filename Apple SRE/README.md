@@ -18,11 +18,11 @@ Start here:
 
 ```bash
 cd "Apple SRE"
-python3 priority_drills/ipv4_validation.py
+python3 priority_drills/prefix_line_count.py
 ```
 
-The first run intentionally raises `NotImplementedError`. Implement the marked section,
-then run it again.
+AP3 now passes its supplied checks. See [review notes](priority_drills/REVIEW_NOTES.md)
+for debugging lessons. AP4 START/END correlation is the next coding task.
 
 ## Folder map
 
