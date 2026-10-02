@@ -109,7 +109,7 @@ Review issues and corrections: [Day 3 review notes](day03/REVIEW_NOTES.md).
 
 Remaining explanation and unaided reattempt deferred while moving on.
 
-## Active: Day 3, P12 — Binary Search (optional extension)
+## Implementation reviewed: Day 3, P12 — Binary Search (optional extension)
 
 - [ ] Answer the level check in `day03/DAY_03_P12.md`
 - [x] Attempt `binary_search` in `day03/binary_search.py`
@@ -119,6 +119,28 @@ Remaining explanation and unaided reattempt deferred while moving on.
 
 Both review corrections pass all 16 checks. Inclusive-boundary explanation and
 examples are recorded in [Day 3 review notes](day03/REVIEW_NOTES.md).
+
+Remaining discussion and unaided reattempt deferred while moving to Day 4.
+
+## Deferred supplement: P13 — SLO Summary
+
+- [ ] Answer the fraction/target level check in `day04/DAY_04.md`
+- [ ] Attempt `summarize_slo` in `day04/slo_summary.py`
+- [ ] Pass checks for status boundaries, target equality, empty input, and invalid targets
+- [ ] Explain empty-input behavior and time and space complexity
+- [ ] Discuss per-service summaries during review
+
+## Active: AP1 — IPv4 Validation (P0)
+
+- [ ] Answer the level check in `priority_drills/AP1_IPV4.md`
+- [ ] Attempt `is_valid_ipv4` in `priority_drills/ipv4_validation.py`
+- [ ] Pass valid, malformed, range, whitespace, leading-zero and Unicode checks
+- [ ] Explain correctness, complexity and changed policy
+
+Next new tasks: AP2 → AP3 → AP4 → AP5 → AP6.
+P0 review alongside these: C2 most-frequent item, C7 slow/fast pointers,
+C6 unaided reattempt, existing core explanations, and A1 health-checker outline.
+See [the revised plan](LEARNING_PLAN.md) and [source mapping](PLAN_MAPPING.md).
 
 ## Optional backlog
 

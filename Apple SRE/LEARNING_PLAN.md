@@ -1,48 +1,73 @@
-# Apple ASE/SRE Five-Day Learning Plan
+# Apple ASE/SRE — priority-first coding plan
 
-## Goal
+## Source
 
-Prepare for Python coding and practical SRE questions using Python 3.10+ and the standard
-library. Study for roughly 2–3 hours per day when possible. If only one hour is available,
-complete the first two core exercises and return to the remaining core work later.
+Use the [supplied seven-day sprint](Apple_ASE_SRE_7_Day_Interview_Preparation_Plan.md)
+as the source of priorities, replacing the old five-day order. Its dates are
+historical schedule labels, not newly confirmed interview dates. These are
+preparation exercises, not a confirmed question bank.
 
-## Completion rule for every exercise
+Existing day folders and P01–P20 IDs stay unchanged. Source C/A/AP IDs are
+separate identifiers. See [PLAN_MAPPING.md](PLAN_MAPPING.md) for coverage.
+Preserve passing work; do not treat passing tests as independent mastery.
 
-- Clarify inputs, outputs, assumptions, and invalid-input behavior.
-- Describe a simple approach before optimizing it.
-- Make an independent first attempt.
-- Test the examples plus at least three boundary or error cases.
-- Explain why the algorithm works.
-- Explain time and extra-space complexity.
-- Discuss one requirement change.
-- Record mistakes and reattempt helped exercises from a blank file.
+## P0 first: next coding sequence
 
-## Schedule
+1. **AP1 IPv4 validation — active.** Manual parsing, octet count/range,
+   ASCII characters, explicit whitespace/leading-zero policy.
+2. **AP2 N file lines into M buckets.** Balanced sizes, empty input, invalid M,
+   large-file memory and I/O tradeoffs.
+3. **AP3 Prefix-matching files and line counts.** Deterministic output,
+   unreadable/missing files, nesting and symlink policy.
+4. **AP4 START/END log correlation.** Request IDs, timestamps, duplicates,
+   missing partners and out-of-order records.
+5. **AP5 p95 latency.** Explicit percentile convention, empty/single input,
+   duplicates and large-data tradeoffs.
+6. **AP6 Tail last N lines.** Bounded memory, N boundaries, file/encoding errors.
 
-| Day | Focus | Core | Extra |
-|---|---|---|---|
-| 1 | Dictionaries, sets, strings, logs | P01 Two Sum; P02 First Unique Character; P03 Error Endpoint Counter | P04 Top-K Frequent Items |
-| 2 | Pointers, linked lists, stacks | P05 Reverse Linked List; P06 Detect Cycle; P07 Valid Parentheses | P08 Merge Sorted Lists |
-| 3 | Sliding windows, queues, intervals | P09 Longest Unique Substring; P10 Rolling Request Count; P11 Merge Intervals | P12 Binary Search |
-| 4 | Practical SRE engineering | P13 SLO Summary; P14 Bounded Health Checker; P15 Safe Retry Wrapper | P16 Configuration Diff |
-| 5 | Timed mock, graphs, heaps | P17 Service Reachability; P18 Merge Event Streams; P19 Rate Limiter | P20 Group Anagrams |
+This preserves the source's explicit AP1 → AP6 order. Interleave these P0 gaps
+and repairs in review blocks; finish them before moving to P1:
 
-## Daily rhythm
+- **C2 most frequent item:** counting in P02/P03 is partial coverage. Implement
+  a dedicated result with deterministic ties and case/punctuation rules.
+- **C7 cycle detection:** replace the existing visited-set approach with
+  slow/fast pointers to meet O(1) extra space.
+- **C6:** unaided reattempt after the window-length hint.
+- **C1/C3/C4/C5:** use existing solutions for explanation/recall checks;
+  demonstrate real file iteration for C5 as well as its iterable parser.
+- **A1 outline:** bounded workers, timeouts versus overall deadlines, latency,
+  partial failures, threads versus async. Coding A1 is P1, its outline is P0.
 
-1. Review for 15 minutes.
-2. Work on each core exercise for 25–40 minutes.
-3. Stop after 35–40 minutes if stuck and ask for a small hint.
-4. Spend 20 minutes testing and explaining the result.
-5. Attempt the extra exercise only after the core work.
+If a repeated weakness needs longer, give it the next full coding block, then
+resume AP order. Do not wait until P1 to repair weak P0 work.
 
-Day 1 core exercises P01–P03 are complete. P05's implementation passes its checks;
-its remaining discussion is deferred at the learner's request. P06's set-based
-implementation passes checks; its O(1)-space optimization and discussion are deferred.
-P07 passes its checks; its remaining discussion is deferred at the learner's request.
-P08 passed its supplied checks; its remaining discussion is deferred.
-P09 passes checks after a hinted correction; discussion and unaided reattempt pending.
-P10 passes its supplied checks; remaining discussion deferred.
-Day 3, P12 Binary Search is the active optional extension.
-P12 passes all checks after review corrections; explanation and unaided reattempt pending.
-P11 passes checks after review corrections; explanation and unaided reattempt pending.
-P04 remains optional.
+## After P0 is reliable
+
+- AP7–AP11 in order: service error thresholds, phone-like normalization,
+  missing sequences, lazy generator, debugging drill.
+- C11 bounded-heap top-K and C12 graph reachability.
+- A1 implementation, A2 retries, A3 configuration diff, A4 log-based error rate.
+  Reuse parsing work between A4/AP7 rather than duplicating it.
+- C8/C10 need unaided reattempts after hints; C9 needs explanation/recall.
+  Their existing implementations already passed checks.
+- P2 only afterward: C13 simple DP and C14 LRU or token-bucket design.
+
+SLO Summary (P13) is **deferred supplemental practice**, only partly related to
+A4: it lacks log parsing, invalid-record reporting and time-window handling.
+Keep its starter intact. P02 First Unique Character and P10 Rolling Request
+Count remain useful passed supplements. P18 Merge Event Streams and P20 Group
+Anagrams are outside the source plan and deferred.
+
+## Pacing and completion
+
+Use a 60-minute coding block: 5 minutes clarify, 25–35 implement, 10 test/explain,
+then repair/recall. One active exercise at a time; harder work can span sessions.
+For every task clarify the contract, attempt without a solution, test normal,
+empty, boundary and failure cases, explain correctness and complexity, discuss
+one changed requirement, and reattempt from blank after help.
+
+The source also allocates time for SRE fundamentals, Linux/networking, incidents,
+distributed design, Kubernetes/capacity/DR, spoken practice, stories and mocks.
+Retain those checklists in the saved source. Coding progress does not complete
+them. If only one hour is available, use the coding block and carry the remaining
+work forward; do not compress the full three-hour sprint into it.

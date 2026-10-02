@@ -1,6 +1,8 @@
 # Apple ASE/SRE Python Practice
 
-This folder turns the five-day Apple ASE/SRE practice plan into guided lessons.
+This folder follows the supplied seven-day Apple ASE/SRE plan with P0 coding first.
+See [the source](Apple_ASE_SRE_7_Day_Interview_Preparation_Plan.md),
+[revised order](LEARNING_PLAN.md), and [coverage mapping](PLAN_MAPPING.md).
 The exercises are interview preparation and are not claimed to be Apple interview questions.
 
 ## How we will work
@@ -16,7 +18,7 @@ Start here:
 
 ```bash
 cd "Apple SRE"
-python3 day01/two_sum.py
+python3 priority_drills/ipv4_validation.py
 ```
 
 The first run intentionally raises `NotImplementedError`. Implement the marked section,
@@ -27,8 +29,8 @@ then run it again.
 - `day01`: dictionaries, sets, strings, and log aggregation
 - `day02`: pointers, linked lists, and stacks
 - `day03`: sliding windows, queues, and intervals
-- `day04`: practical SRE engineering
-- `day05`: timed mock, graphs, heaps, and rate limiting
+- `day04`: deferred SLO Summary supplement
+- `priority_drills`: source AP exercises, starting with AP1 IPv4 validation
 
-The original plan is represented by `LEARNING_PLAN.md`. `DAILY_EXERCISES.md` tells you
+The current priority order is represented by `LEARNING_PLAN.md`. `DAILY_EXERCISES.md` tells you
 which exercise is currently active, and `PROGRESS_LOG.md` records completed work and mistakes.

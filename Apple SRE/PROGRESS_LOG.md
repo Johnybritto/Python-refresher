@@ -1,11 +1,13 @@
 # Apple ASE/SRE Progress Log
 
 Mark an exercise solved only after an independent implementation and passing tests.
+Source coverage and current priorities are in [PLAN_MAPPING.md](PLAN_MAPPING.md).
+Local P IDs remain stable; `Supplement` means no exact source exercise.
 
 | ID | Priority | Solved | Tests pass | Complexity explained | Reattempt passed |
 |---|---|---|---|---|---|
 | P01 | P0 | [x] | [x] | [x] | [ ] |
-| P02 | P0 | [x] | [x] | [x] | [ ] |
+| P02 | Supplement | [x] | [x] | [x] | [ ] |
 | P03 | P0 | [x] | [x] | [x] | [ ] |
 | P04 | P1 | [ ] | [ ] | [ ] | [ ] |
 | P05 | P0 | [ ] | [x] | [ ] | [ ] |
@@ -13,20 +15,36 @@ Mark an exercise solved only after an independent implementation and passing tes
 | P07 | P0 | [ ] | [x] | [ ] | [ ] |
 | P08 | P1 | [ ] | [x] | [ ] | [ ] |
 | P09 | P0 | [ ] | [x] | [ ] | [ ] |
-| P10 | P0 | [ ] | [x] | [ ] | [ ] |
-| P11 | P0 | [ ] | [x] | [ ] | [ ] |
+| P10 | Supplement | [ ] | [x] | [ ] | [ ] |
+| P11 | P1 | [ ] | [x] | [ ] | [ ] |
 | P12 | P1 | [ ] | [x] | [ ] | [ ] |
-| P13 | P0 | [ ] | [ ] | [ ] | [ ] |
-| P14 | P0 | [ ] | [ ] | [ ] | [ ] |
-| P15 | P0 | [ ] | [ ] | [ ] | [ ] |
+| P13 | Supplement | [ ] | [ ] | [ ] | [ ] |
+| P14 | P0 outline / P1 code | [ ] | [ ] | [ ] | [ ] |
+| P15 | P1 | [ ] | [ ] | [ ] | [ ] |
 | P16 | P1 | [ ] | [ ] | [ ] | [ ] |
-| P17 | P0 | [ ] | [ ] | [ ] | [ ] |
-| P18 | P0 | [ ] | [ ] | [ ] | [ ] |
-| P19 | P0 | [ ] | [ ] | [ ] | [ ] |
-| P20 | P1 | [ ] | [ ] | [ ] | [ ] |
+| P17 | P1 | [ ] | [ ] | [ ] | [ ] |
+| P18 | Supplement | [ ] | [ ] | [ ] | [ ] |
+| P19 | P2 | [ ] | [ ] | [ ] | [ ] |
+| P20 | Supplement | [ ] | [ ] | [ ] | [ ] |
+
+## Source additions and gaps
+
+| Source | Priority | Status |
+|---|---|---|
+| AP1 | P0 | Active starter; no implementation yet |
+| AP2–AP6 | P0 | Pending, in source order |
+| C2 | P0 | Counting partly covered; dedicated most-frequent task pending |
+| C7 | P0 | Set solution passes; O(1)-space slow/fast version pending |
+| A1 outline | P0 | Pending; implementation remains P1 |
+| AP7–AP11 | P1 | Pending after P0 |
+| C11/C12, A1 code/A2/A3/A4 | P1 | Pending; reuse mapped local work |
+| C13/C14 | P2 | Deferred |
 
 ## Current session
 
+- Reconciled against the user-supplied seven-day plan. AP1 is active; SLO Summary
+  is deferred supplemental work. Historical test results and pending explanations
+  remain intact. See PLAN_MAPPING.md for full source coverage.
 - P12 Binary Search passes all 16 checks after correcting value comparisons and
   the inclusive loop condition. Learner identified indices 2 and 3 in the range
   [2, 3]. Complexity explanation, first-match follow-up, and unaided reattempt pending.
