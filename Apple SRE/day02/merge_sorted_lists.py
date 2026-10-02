@@ -14,21 +14,21 @@ def merge_sorted_lists(left: Node | None, right: Node | None) -> Node | None:
     result = Node(0)
     head = result
 
-    while left and  right:
+    while left and right:
         if left.value <= right.value:
             head.next = left
-            left =left.next
+            left = left.next
         else:
-            head.next =right
+            head.next = right
             right =right.next
         head = head.next
 
     if left:
-        head.next =left
+        head.next = left 
     if right:
-        head.next =right
+        head.next = right
 
-    return result.next
+    return result.next 
 
     
    # """Merge disjoint sorted lists; take left first on ties and preserve values."""

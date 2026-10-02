@@ -39,4 +39,9 @@ Day 1 core exercises P01–P03 are complete. P05's implementation passes its che
 its remaining discussion is deferred at the learner's request. P06's set-based
 implementation passes checks; its O(1)-space optimization and discussion are deferred.
 P07 passes its checks; its remaining discussion is deferred at the learner's request.
-P08 Merge Sorted Lists is the active optional extension. P04 remains optional.
+P08 passed its supplied checks; its remaining discussion is deferred.
+P09 passes checks after a hinted correction; discussion and unaided reattempt pending.
+P10 passes its supplied checks; remaining discussion deferred.
+Day 3, P11 Merge Intervals is active. P12 Binary Search is the optional extension.
+P11 passes checks after review corrections; explanation and unaided reattempt pending.
+P04 remains optional.

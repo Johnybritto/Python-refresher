@@ -65,13 +65,47 @@ to O(1) extra space and the remaining discussion are deferred at your request.
 
 Remaining explanation and discussion deferred at your request.
 
-## Active: Day 2, P08 — Merge Sorted Lists (optional extension)
+## Implementation reviewed: Day 2, P08 — Merge Sorted Lists (optional extension)
 
 - [ ] Answer the level check in `day02/DAY_02_P08.md`
 - [x] Attempt `merge_sorted_lists` in `day02/merge_sorted_lists.py`
 - [x] Make the supplied checks pass, reusing nodes and preserving values
 - [ ] Explain correctness and time and extra-space complexity
 - [ ] Discuss one requirement change during review
+
+Remaining discussion deferred while moving to Day 3 at your request.
+
+## Implementation reviewed: Day 3, P09 — Longest Unique Substring
+
+- [ ] Answer the level check in `day03/DAY_03.md`
+- [ ] Describe a simple approach before optimizing
+- [x] Attempt `longest_unique_length` in `day03/longest_unique_substring.py`
+- [x] Make the supplied checks pass
+- [ ] Explain the window invariant and time and extra-space complexity
+- [ ] Discuss returning the substring itself during review
+
+Corrected the window length with a hint; remaining discussion deferred.
+Reattempt later without the hint.
+
+## Implementation reviewed: Day 3, P10 — Rolling Request Count
+
+- [ ] Answer the boundary level check in `day03/DAY_03_P10.md`
+- [x] Attempt `rolling_request_counts` in `day03/rolling_request_count.py`
+- [x] Pass example, boundary, generator-input, and invalid-window checks
+- [ ] Explain time and space complexity and why old requests can be removed
+- [ ] Discuss out-of-order arrivals during review
+
+Remaining discussion deferred at your request.
+
+## Active: Day 3, P11 — Merge Intervals
+
+- [ ] Answer the level check in `day03/DAY_03_P11.md`
+- [x] Attempt `merge_intervals` in `day03/merge_intervals.py`
+- [x] Pass checks including touching endpoints, containment, and unchanged input
+- [ ] Explain correctness and time and space complexity
+- [ ] Discuss half-open intervals during review
+
+Review issues and corrections: [Day 3 review notes](day03/REVIEW_NOTES.md).
 
 ## Optional backlog
 

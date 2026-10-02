@@ -12,9 +12,9 @@ Mark an exercise solved only after an independent implementation and passing tes
 | P06 | P0 | [ ] | [x] | [ ] | [ ] |
 | P07 | P0 | [ ] | [x] | [ ] | [ ] |
 | P08 | P1 | [ ] | [x] | [ ] | [ ] |
-| P09 | P0 | [ ] | [ ] | [ ] | [ ] |
-| P10 | P0 | [ ] | [ ] | [ ] | [ ] |
-| P11 | P0 | [ ] | [ ] | [ ] | [ ] |
+| P09 | P0 | [ ] | [x] | [ ] | [ ] |
+| P10 | P0 | [ ] | [x] | [ ] | [ ] |
+| P11 | P0 | [ ] | [x] | [ ] | [ ] |
 | P12 | P1 | [ ] | [ ] | [ ] | [ ] |
 | P13 | P0 | [ ] | [ ] | [ ] | [ ] |
 | P14 | P0 | [ ] | [ ] | [ ] | [ ] |
@@ -27,6 +27,16 @@ Mark an exercise solved only after an independent implementation and passing tes
 
 ## Current session
 
+- P11 Merge Intervals passes all 11 checks after correcting tuple assignment,
+  touching-endpoint handling, and input mutation. Explanation and unaided reattempt
+  pending. See [Day 3 review notes](day03/REVIEW_NOTES.md) for issues and corrections.
+- P10 implementation is correct and passes nine count cases plus four invalid-window
+  checks. O(n) total time, O(w) queue space plus O(n) output space. Learner explanation
+  and follow-up discussion deferred. Suggested cleanup: descriptive loop variable,
+  remove debug print, and move docstring/remove unreachable starter code.
+- P09 passes all 12 checks after correcting the window length with a hint.
+  Learner confirmed inclusive length calculation; complexity explanation,
+  requirement-change discussion, and unaided reattempt remain pending.
 - P08 Merge Sorted Lists implementation passes all nine checks, reusing nodes
   with O(n + m) time and O(1) extra space. Learner explanation and discussion pending.
 - P07 implementation is correct for the bracket-only contract and passes all 12
@@ -44,4 +54,7 @@ Mark an exercise solved only after an independent implementation and passing tes
 
 | Date / problem | What failed | Why it failed | Rule to remember | Reattempt result |
 |---|---|---|---|---|
-| | | | | |
+| 2026-10-02 / P09 | Returned 1 for `abcdef` | Used `i - j + 1` for window length | Inclusive length is right minus left plus one: `j - i + 1` | Correction passes checks; unaided reattempt pending |
+| 2026-10-02 / P11 | Tuple assignment raised `TypeError` | Tuples are immutable | Replace the entire tuple | Correction passes checks; unaided reattempt pending |
+| 2026-10-02 / P11 | Touching intervals kept separate | Used `<=` to detect separation | Closed intervals are separate only when last end < next start | Correction passes checks; unaided reattempt pending |
+| 2026-10-02 / P11 | Input list reordered | Used in-place `.sort()` | Use `sorted()` when input must remain unchanged | Correction passes checks; unaided reattempt pending |
