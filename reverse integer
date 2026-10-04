@@ -20,7 +20,7 @@ class Solution:
             digit = x % 10 
             x = x//10
 
-            if ( result > max_int //10 ) or ( result == max_int // 10  or digit > max_int %10):
+            if ( result > max_int //10 ) or ( result == max_int // 10  and digit > max_int %10):
                 return 0
             
             result = result*10 + digit
