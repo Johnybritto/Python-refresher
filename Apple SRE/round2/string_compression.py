@@ -71,6 +71,7 @@ def compress(text: str) -> str:
 
 def compress_chars(chars: list[str]) -> int:
 
+# for list we need to do inplace which means we cannot create a newlist 
     read = 0
     write = 0 
 
