@@ -37,6 +37,18 @@ and move only ``high``—the value swapped into ``current`` still needs checking
 
 Target complexity: O(n) time and O(1) extra space.
 """
+#nums= [2,0,1]
+""" 1. Start: low = 0, mid = 0, high = 2.
+	• nums[mid] is 2.
+	• Swap nums[mid] with nums[high]. Array becomes [1, 0, 2].
+	• Move high down to 1.
+2. Next Step: low = 0, mid = 0, high = 1.
+	• nums[mid] is now 1.
+	• No swap needed. Move mid up to 1.
+3. Next Step: low = 0, mid = 1, high = 1.
+	• nums[mid] is 0.
+	• Swap nums[mid] with nums[low]. Array becomes [0, 1, 2].
+	• Move low to 1, move mid to 2. """
 
 
 def sort_colors(nums: list[int]) -> None:
