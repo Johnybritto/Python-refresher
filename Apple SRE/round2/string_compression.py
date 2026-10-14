@@ -71,6 +71,7 @@ def compress(text: str) -> str:
 
 def compress_chars(chars: list[str]) -> int:
 
+
 # for list we need to do inplace which means we cannot create a newlist 
     read = 0
     write = 0 
@@ -80,18 +81,20 @@ def compress_chars(chars: list[str]) -> int:
         count = 0 
 
         while read < len(chars) and chars[read] == char:
-            count +=1
             read +=1
+            count +=1
 
         chars[write] = char
         write +=1
 
-        if count >1:
-            for c in str(count):
-                chars[write] = c
+        if count > 1:
+            for i in str(count):
+                chars[write] =i
                 write +=1
 
-    return write 
+    return write
+
+
     """Compress chars in place and return the compressed length."""
     raise NotImplementedError("Implement R23-C03 before running checks")
 
